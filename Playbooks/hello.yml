@@ -4,8 +4,8 @@
   become: yes
 
   vars:
-    name: sachin
+    my_name: sachin
 
   tasks:
     - name: greet user
-      command: echo "hello {{ name }}"
+      command: echo "hello {{ my_name }}"
