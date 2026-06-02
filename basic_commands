@@ -1,3 +1,5 @@
+ansible runs on push based mechanism and agentless and jinja used to create templates
+vim .ssh/authorized_keys give public key in worker nodes, key generate in control node using ssh-keygen. We can ssh to worker from master
 ansible servers -a "free -h"
 ansible servers -a "uname -r"
 ansible servers -a "sudo apt update"
