@@ -1,0 +1,25 @@
+- name: install_pkg
+  hosts: servers
+  become: yes
+
+  vars:
+    pkg_to_install:
+      - tree
+      - jq
+      - unzip
+      - wget
+      - apache2
+
+  tasks:
+    - name: installing packages
+      apt:
+        name: "{{ item }}"                  #{{item}} this is jinja template
+        state: present
+        update_cache: yes                   #update package repository metadata
+      loop: "{{ pkg_to_install }}"
+      debug:                                                    #use to print message
+        msg: "Installing {{ item }}"                      
+
+      
+
+    
