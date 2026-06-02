@@ -1,0 +1,11 @@
+cat /etc/ansible/hosts 
+
+[servers]
+server_1 ansible_host=54.242.224.21
+server_2 ansible_host=100.31.64.66
+
+
+[servers:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/keys/ansible-master-key.pem
