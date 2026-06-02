@@ -17,6 +17,8 @@
         state: present
         update_cache: yes                   #update package repository metadata
       loop: "{{ pkg_to_install }}"
+    - name: show message
+      loop: "{{ pkg_to_install }}"
       debug:                                                    #use to print message
         msg: "Installing {{ item }}"                      
 
