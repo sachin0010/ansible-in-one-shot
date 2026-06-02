@@ -9,3 +9,10 @@ ansible.cfg file -->  to set ansible opern and defaults, central configuration f
 ansible fact --> informn about a managed node, discovered by ansible
 run pb against specific set of hosts -->  use --limit option
  ansible servers -m "setup"    - informn regarding gathering facts> node informn, ansible servers -m "setup" | grep -i "distribution"
+ansible vault - used to encrypt the secret,  to decrypt rqquired valut_pass.txt file
+
+**Roles:-modular, reusable bundles of automation content (tasks, variables, files, and handlers   create using Ansible "Galaxy"**
+ansible-galaxy init role/docker
+tree
+handlers - if we want to start/restart docker service 
+
