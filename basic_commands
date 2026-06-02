@@ -1,0 +1,8 @@
+ansible servers -a "free -h"
+ansible servers -a "uname -r"
+ansible servers -a "sudo apt update"
+ansible-inventory --list
+ansible-playbook nginx.yml -v
+ansible.cfg file -->  to set ansible opern and defaults, central configuration file used to define settings and parameters that alter how Ansible operates
+ansible fact --> informn about a managed node, discovered by ansible
+run pb against specific set of hosts -->  use --limit option
